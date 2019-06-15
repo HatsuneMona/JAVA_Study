@@ -2,7 +2,6 @@ package miao;
 
 public class mainclass {
     static public void main(String args[]){
-        System.out.println("testOK");
         System.out.println("**********以下创建的是Person类**********");
         Person aperson = new Person("汪汪汪",10);
         aperson.WhosThat();

@@ -4,22 +4,22 @@ import java.awt.event.ActionListener;
 
 public class MainForm {
     private JPanel MainPanel;
-    private JTextField 汪汪汪;
-    private JButton 嘤嘤嘤;
-    private JLabel 喵喵喵;
+    private JTextField textfield;
+    private JButton button;
+    private JLabel label;
 
     public MainForm() {
-        嘤嘤嘤.addActionListener(new ActionListener() {
+        button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(汪汪汪.getText().length()!=0){
-                    喵喵喵.setText(汪汪汪.getText());
-                    汪汪汪.setText(null);
+                if(textfield.getText().length()!=0){
+                    label.setText(textfield.getText());
+                    textfield.setText(null);
                 }
                 else{
-                    喵喵喵.setText("文本框内容为空");
+                    label.setText("文本框内容为空");
                 }
-                汪汪汪.requestFocus();
+                textfield.requestFocus();
             }
         });
     }

@@ -9,7 +9,7 @@ public class Student extends Person{
     }
     public Student(){};
     public void WhosThat(){
-        System.out.println("【已将父类的函数被覆盖】函数名：WhosThat");
+        System.out.println("【已将父类的函数覆盖】函数名：WhosThat");
         System.out.println("我的名字是："+name+"，我今年 "+age+" 岁了。【我是一个学生】");
     }
     public void calculate(int a,int b){
